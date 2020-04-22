@@ -84,9 +84,116 @@
         
     </style>
             
-     <iframe class="position2" src="https://player.twitch.tv/?channel=jasonbuckland1" frameborder="0" allowfullscreen="true" scrolling="no" height="400" width="100%"
+     <iframe class="position2" src="https://player.twitch.tv/?channel=jasonbuckland1" frameborder="0" allowfullscreen="true" scrolling="no" height="400" width="30%"
              
             style="overflow: hidden" align="left"></iframe>
+        
+         <iframe class="position2" src="https://nearpod.com/" frameborder="0" allowfullscreen="true" scrolling="no" height="650" width="70%"
+             
+            style="overflow: hidden" align="right"></iframe>
+       
+        
+<button onclick="openFullscreen();">Open Web Page Fullscreen</button>     
+<button onclick="closeFullscreen();">Close Web Page Fullscreen</button>       
+<button onclick="makeFullScreen()">Teacher View - Do not press!</button>
+        
+        <style>
+        
+            body, html {
+                height: 100px;   /*style for nearpod full screen*/
+                margin: 0;
+                overflow: hidden;
+}
+            iframe {
+                width: 720px;
+                height: 750px;
+}
+            iframe.fullScreen {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 65px;
+                left: 0;
+}
+        </style>
+        
+        <script>
+            
+            function requestFullScreen(element) {
+    // Supports most browsers and their versions.
+    var requestMethod = element.requestFullScreen || element.webkitRequestFullScreen || element.mozRequestFullScreen || element.msRequestFullscreen;
+
+    if (requestMethod) { // Native full screen.
+        requestMethod.call(element);
+    } else if (typeof window.ActiveXObject !== "undefined") { // Older IE.
+        var wscript = new ActiveXObject("WScript.Shell");
+        if (wscript !== null) {
+            wscript.SendKeys("{F11}");
+        }
+    }
+}
+
+function makeFullScreen() {
+    document.getElementsByTagName("iframe")[1].className = "fullScreen";
+    var elem = document.body;
+    requestFullScreen(elem);
+}
+                                                                                    
+           
+            </script>
+
+    <script>
+            function ;
+    </script>
+    
+    <style>
+            body, html {
+                height: 100%;
+                margin: 0;
+}
+            .fullScreen {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+}
+    </style>
+    
+        
+<script>
+var elem = document.documentElement;
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.mozRequestFullScreen) { /* Firefox */
+    elem.mozRequestFullScreen();
+  } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE/Edge */
+    elem.msRequestFullscreen();
+  }
+}
+
+function closeFullscreen() {
+  if (document.exitFullscreen) {
+    document.exitFullscreen();
+  } else if (document.mozCancelFullScreen) {
+    document.mozCancelFullScreen();
+  } else if (document.webkitExitFullscreen) {
+    document.webkitExitFullscreen();
+  } else if (document.msExitFullscreen) {
+    document.msExitFullscreen();
+  }
+}
+    
+   
+</script>
+
+        
+        
+        
         
     <!--   <div class="chat-popup" id="myForm" style="overflow: hidden" align="right"> 
   <form action="/action_page.php" class="form-container">
@@ -98,10 +205,12 @@
    
   </form>
 </div>
+        
+    <iframe class="position" width="70%" height="650" src="https://nearpod.com/login/?oc=LogInTopNav"  position="relative" scrolling="no"
+            
+            style="overflow: hidden" align="right"></iframe>
+        
         -->
-    <iframe class="position" width="100%" height="850" src="https://nearpod.com/login/?oc=LogInTopNav" top="100%" position="relative"></iframe>
-        
-        
        
       
         
