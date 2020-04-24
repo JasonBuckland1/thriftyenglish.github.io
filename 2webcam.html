@@ -6,98 +6,83 @@
     </head>
     
     <body>
-        <div class="topnav">
-            <a href="index.html">Home</a>
-            <a class="active" href="2webcam.html">Live Webcam</a>
-            <a href="3schedule.html">Schedule</a>
-            <a href="4about.html">About</a>
-        </div>
+       <!-- Load an icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- The sidebar -->
+<div class="sidebar">
+  <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+  <a href="2webcam.html"><i class="fa fa-fw fa-wrench"></i>Nearpod and Stream</a>
+  <a href="3schedule.html"><i class="fa fa-fw fa-user"></i>Schedule</a>
+  <a href="4about.html"><i class="fa fa-fw fa-envelope"></i>About</a>
+</div>
+
+    <style>/* Style the sidebar - fixed full height */
+.sidebar {
+  height: 170px;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 16px;
+}
+
+/* Style sidebar links */
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+}
+
+/* Style links on mouse-over */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Style the main content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  padding: 0px 10px;
+}
+
+/* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
         
-                    <style>
-                        
-                           
-                            .position .box{
-                                    float: left;
-                                    left: 0px;
-                                    top: 5px;
-                                    border: 3px solid #73AD21; 
-                                    }
-                            
-                            .position3 .box{
-                                    display: inline-block;
-                                    float: right;
-                                    position:relative;
-                                    right: 0px;
-                                    top: 0px;        
-                                    }
-        }
-            
-                                    {box-sizing: border-box;}
-                        
-/* Add styles to the form container */
-                            .form-container .box{
-                                    display:inline-block;
-                                    float: right;
-                                    right: 0px;
-                                    top: auto;
-                                    height: 372px;
-                                    padding: 0px;
-                                    background-color: white;
-                                    top: 0px;
-                                    bottom: 500px;
-                                    border: 3px solid #73AD21; 
-                                    }
-/* Full-width textarea */
-                            .form-container textarea {
-                                    width: 1000%;
-                                    padding: 1px;
-                                    margin: 0px 0 0px 0;
-                                    border: none;
-                                    background: #f1f1f1;
-                                    resize: none;
-                                    height: 360px;
-                                    }
-
-/* When the textarea gets focus, do something */
-                            .form-container textarea:focus {
-                                    background-color: #ddd;
-                                    outline: none;
-                                    }
-
-/* Set a style for the submit/login button */
-                            .form-container .btn {
-                                    background-color: #4CAF50;
-                                    color: white;
-                                    padding: 10px 0px;
-                                    border: none;
-                                    cursor: pointer;
-                                    width: 100%;
-                                    margin-bottom:0px;
-                                    opacity: 0.8;
-                                    }
-
-/
-/* Add some hover effects to buttons */
-                            .form-container .btn:hover, .open-button:hover {
-                                    opacity: 1;
-                                    }
+        .position3 {
+            padding-top: 100px;  
+}
         
+        .position4 {
+            padding-top: 0px;
+}
     </style>
-            
-     <iframe class="position2" src="https://player.twitch.tv/?channel=jasonbuckland1" frameborder="0" allowfullscreen="true" scrolling="no" height="400" width="30%"
-             
-            style="overflow: hidden" align="left"></iframe>
         
-         <iframe class="position2" src="https://nearpod.com/" frameborder="0" allowfullscreen="true" scrolling="no" height="650" width="70%"
+   
+           <div class="position3">
+     <iframe class="position3" src="https://player.twitch.tv/?channel=jasonbuckland1" frameborder="0" allowfullscreen="true" scrolling="no" height="200" width="20%" top="10%"
              
-            style="overflow: hidden" align="right"></iframe>
-       
+            style="overflow: hidden" align="left" ></iframe>
+               </div> 
+        
+         <div class="position4">
+         <iframe  class="position4" src="https://nearpod.com/" frameborder="0" allowfullscreen="true" scrolling="no" height="650" width="80%" 
+             
+            style="overflow: hidden" align="right: top" ></iframe>
+                </div>
         
 <!--<button onclick="openFullscreen();">Open Web Page Fullscreen</button>     
 <button onclick="closeFullscreen();">Close Web Page Fullscreen</button>  -->   
         
-                                                                                        <!-- make full screen-->
-        
+    <!---                                                                                    <!-- make full screen-->
+        <!--
 <button onclick="makeFullScreen()">0</button>
         
         <style>
@@ -147,7 +132,7 @@ function makeFullScreen() {
         
                                                                                               <!-- make not full screen-->
         
-    <script>
+   <!-- <script>
             function ;
     </script>
     
@@ -198,7 +183,7 @@ function closeFullscreen() {
 
         
         
-        
+        -->
         
     <!--   <div class="chat-popup" id="myForm" style="overflow: hidden" align="right"> 
   <form action="/action_page.php" class="form-container">
@@ -218,7 +203,7 @@ function closeFullscreen() {
         -->
        
       
-        
+        -->
         
     </body>
     
