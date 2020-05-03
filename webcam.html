@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html>
+    <head> 
+        <link href="main.css" rel="stylesheet" type="text/css">
+    </head>
+    
+    <body>
+       <!-- Load an icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- The sidebar -->
+<div class="sidebar">
+  <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+  <a href="2webcam.html"><i class="fa fa-fw fa-wrench"></i>Nearpod and Stream</a>
+  <a href="3schedule.html"><i class="fa fa-fw fa-user"></i>Schedule</a>
+  <a href="4about.html"><i class="fa fa-fw fa-envelope"></i>About</a>
+</div>
+
+    <style>/* Style the sidebar - fixed full height */
+.sidebar {
+  height: 170px;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 16px;
+}
+
+/* Style sidebar links */
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+}
+
+/* Style links on mouse-over */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Style the main content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  padding: 0px 10px;
+}
+
+/* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+        
+        .position3 {
+            padding-top: 100px;  
+}
+        
+        .position4 {
+            padding-top: 0px;
+}
+    </style>
+        
+   
+           <div class="position3">
+     <iframe class="position3" src="https://player.twitch.tv/?channel=jasonbuckland1" frameborder="0" allowfullscreen="true" scrolling="no" height="200" width="20%" top="10%"
+             
+            style="overflow: hidden" align="left" ></iframe>
+               </div> 
+        
+         <div class="position4">
+         <iframe  class="position4" src="https://nearpod.com/" frameborder="0" allowfullscreen="true" scrolling="no" height="650" width="80%" 
+             
+            style="overflow: hidden" align="right: top" ></iframe>
+                </div>
+        
+<!--<button onclick="openFullscreen();">Open Web Page Fullscreen</button>     
+<button onclick="closeFullscreen();">Close Web Page Fullscreen</button>  -->   
+        
+    <!---                                                                                    <!-- make full screen-->
+        <!--
+<button onclick="makeFullScreen()">0</button>
+        
+        <style>
+        
+            body, html {
+                height: 100px;   /*style for nearpod full screen*/
+                margin: 0;
+                overflow: hidden;
+}
+            iframe {
+                width: 720px;
+                height: 770px;
+}
+            iframe.fullScreen {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 65px;
+                left: 0;
+}
+        </style>
+        
+        <script>
+            
+            function requestFullScreen(element) {
+    // Supports most browsers and their versions.
+    var requestMethod = element.requestFullScreen || element.webkitRequestFullScreen || element.mozRequestFullScreen || element.msRequestFullscreen;
+
+    if (requestMethod) { // Native full screen.
+        requestMethod.call(element);
+    } else if (typeof window.ActiveXObject !== "undefined") { // Older IE.
+        var wscript = new ActiveXObject("WScript.Shell");
+        if (wscript !== null) {
+            wscript.SendKeys("{F11}");
+        }
+    }
+}
+
+function makeFullScreen() {
+    document.getElementsByTagName("iframe")[1].className = "fullScreen";
+    var elem = document.body;
+    requestFullScreen(elem);
+}
+                                                                                    
+            </script>
+        
+        
+                                                                                              <!-- make not full screen-->
+        
+   <!-- <script>
+            function ;
+    </script>
+    
+    <style>
+            body, html {
+                height: 100%;
+                margin: 0;
+}
+            .fullScreen {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+}
+    </style>
+    
+        
+<script>
+var elem = document.documentElement;
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.mozRequestFullScreen) { /* Firefox */
+    elem.mozRequestFullScreen();
+  } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE/Edge */
+    elem.msRequestFullscreen();
+  }
+}
+
+function closeFullscreen() {
+  if (document.exitFullscreen) {
+    document.exitFullscreen();
+  } else if (document.mozCancelFullScreen) {
+    document.mozCancelFullScreen();
+  } else if (document.webkitExitFullscreen) {
+    document.webkitExitFullscreen();
+  } else if (document.msExitFullscreen) {
+    document.msExitFullscreen();
+  }
+}
+    
+   
+</script>
+
+        
+        
+        -->
+        
+    <!--   <div class="chat-popup" id="myForm" style="overflow: hidden" align="right"> 
+  <form action="/action_page.php" class="form-container">
+   
+      
+    <textarea placeholder="Type message.." name="msg" scrolling="no" height="400" required></textarea>
+
+    <button type="submit" class="btn">Send</button>  
+   
+  </form>
+</div>
+        
+    <iframe class="position" width="70%" height="650" src="https://nearpod.com/login/?oc=LogInTopNav"  position="relative" scrolling="no"
+            
+            style="overflow: hidden" align="right"></iframe>
+        
+        -->
+       
+      
+        -->
+        
+    </body>
+    
+   
+    
+</html>

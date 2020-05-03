@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 10px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+    
+.change {
+                
+                border: 5px solid;
+                padding: 10px; 
+                resize: both;
+                overflow: auto;
+                max-height: inherit;
+                max-width: inherit;
+                margin-left: 50px;
+                margin-right: 50px;
+    }
+      * {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 23%;
+  padding: 5px;
+}
+
+        
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+        
+    }
+    
+    .extra1 {
+        padding-left: 190px;
+    }
+          
+    .extra2 {
+        padding-left: 60px;
+    }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Using Nearpod</h1>
+  <p>Find your 'Lexile Level' and join our 'Nearpod' course on the evening which matches your English ability.</p>
+</div>
+
+<div class="topnav">
+  <a href="index.html">Home <br> 家</a>
+  <a href="2level.html">Which Level?<br> 哪个级别？</a>
+  <a href="3lexile.html">Finding Your Lexile<br> 寻找你的Lexile</a>
+  <a href="4near.html">Using Nearpod<br>使用Nearpod </a>
+  <a href="5webex.html">Interracting With 'Webex' <br>与“ Webex”互动</a>
+  <a href="#">Nothing Here</a>
+ 
+  <a href="10teach.html" style="float:right">Teaching Page <br> 教学页面 </a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Video Streaming - 8-9pm, Monday - Friday.</h2>
+        
+        
+        
+        <div class="row">
+  <div class="column">
+      
+      
+      <div class="extra2">
+    <img src="ree.png"  style="height:60px">
+     </div>
+  </div>
+  <div class="column">
+      
+    <h4> CLASS CODE: FEKETN7S</h4>
+      
+  </div>
+   <div class="column">
+       <div class="extra1">
+    <img src="webex.png"  style="height:60px">
+           </div>
+  </div>
+     <div class="column">
+     <h4> MEETING NUMBER: 577 207 147</h4>
+  </div>         
+</div>
+        
+    <div class="change">    
+    <iframe class="position3" src="https://player.twitch.tv/?channel=jasonbuckland1" frameborder="0" allowfullscreen="true" scrolling="no" height="300px" width="100%" top="10%"
+             
+            style="overflow: hidden" align="left" ></iframe>
+    </div>
+      <p>If YOU DON'T HAVE WEBEX ...</p>
+      <p>... you can download the free software at 'www.webex.com' and join our interactive session.</p>
+    </div>
+    <div class="card">
+      <h2>Course Level Guidance and Nearpod Log-In.</h2>
+      <h4>Join a lesson by typing in the code I display at 8pm!
+        
+        <br><br>I give two codes: one allows me to control the slides, the other allows you to control the slides. This second code will be given at the end of the lesson. </h4>
+        
+        <div class="change">
+      <iframe class="position3" src="lexile.mp4" frameborder="0" allowfullscreen="true" scrolling="no" height="560px"
+    width=100% top="10%"></iframe>
+         </div>
+        
+      <p>HELP!</p>
+      <p>You can log into more than one session to see which one is right for you! Did I mention it was free...</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>www.nearpod.com</h2>
+      <img src="comp.png" style="height:230px;"></img>
+      
+       <h3>Lessons students access anytime, anywhere</h3>  
+     
+       <p>Students can complete assignments with a teacher and independently</p>
+      
+       <img src="girl.png" style="height:250px;"></img>
+    
+       <h3>Synchronised learning during live instruction</h3>  
+     
+       <p>Live lessons across all student devices.</p>
+      
+       <img src="lets.png" style="height:280px;"></img>
+    
+       <h3>Technology that fuels connection</h3>  
+     
+       <p>Classroom communities stay connected with collaborative activities and formative assessments like virtual reality, polls, collaborate boards, and game-based quizzes delivered through one seamless learning experience.</p>
+      
+       <img src="colb.png" style="height:260px;"></img>
+      
+      
+      
+    </div>
+    <div class="card">
+      <h3>Our Schedule (lexile range)</h3>
+       <p>      Monday - Level 1  - BR70-10L
+        <br><br>Tuesday - Level 2 - BR40-160L
+        <br><br>Wednesday - Level 3 - 160L-450L
+        <br><br>Thursday - Level 4 - 300L-530L
+        <br><br>Friday - Level 5 - 430L-620L
+        <br><br>Friday - Level 6 - 530L-850L
+      </p>
+        
+        
+        
+        
+    </div>
+    
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Supporting humans</h2>
+</div>
+
+</body>
+</html>
