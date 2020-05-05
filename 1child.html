@@ -49,18 +49,35 @@ body {
 /* Left column */
 .leftcolumn {   
   float: left;
-  width: 50%;
+  width: 33%;
  
 }
 
 /* Right column */
 .rightcolumn {
   float: left;
-  width: 50%;
+  width: 33%;
   background-color: #f1f1f1;
   padding-left: 20px;
 }
 
+   /* Mid column */
+.midcolumn {
+  float: left;
+  width: 33%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+} 
+    
+    
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 33%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+    
 
 /* Add a card effect for articles */
 .card {
@@ -86,7 +103,7 @@ body {
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {   
+  .leftcolumn, .rightcolumn, .midcolumn {   
     width: 100%;
     padding: 0;
   }
@@ -135,8 +152,8 @@ body {
         float: left;
     }
     
-    .floatright {
-        float:right;
+     .floatright {
+        float: right;
     }
     
     .floatr {
@@ -153,21 +170,29 @@ body {
         object-fit:contain;
       }
      
+    .paddingYes {
+        padding-left: 20px;
+    }
     
 </style>
 </head>
 <body>
 
 <div class="header">
-     <div class="float">
-    <a href="6teach.html"> <img src="com.png" 
-        style="height: 60px">  </a> 
-       </div> 
         
        <img src="te.png">
       
-    <div class="floatright">
+     <div class="floatright">
     <a href="3mainphone.html"> <img src="phone.png" 
+        style="height: 60px">  </a> 
+        
+       </div> 
+    
+     <div class="float">
+    <a href="index.html"> <img src="exit.png" 
+        style="height: 60px"> </a> 
+         
+         <a href="6teach.html"> <img src="com.png" 
         style="height: 60px">  </a> 
         
        </div> 
@@ -180,9 +205,22 @@ body {
 <div class="row">
   <div class="leftcolumn">
     <div class="card">
-      <h2>Younger Learners Click Here</h2>
+      <h2>Read Theory</h2>
         
-        <a href="1child.html"><img src="young.png" style="width: 100%:auto"></img></a>
+     <a href="https://www.readtheory.org"> <img src="rea.png" style="width: 100%:auto"></img></a>
+          
+    </div>
+    
+  </div>
+    
+    
+    
+    <div class="row">
+  <div class="midcolumn">
+    <div class="card">
+      <h2>Teach Your Monster To Read <br> (free on laptop)</h2>
+        
+        <a href="https://www.teachyourmonstertoread.com"><img src="teaMo.png" style="width: 100%:auto"></img></a>
           
     </div>
     
@@ -191,11 +229,8 @@ body {
     
   <div class="rightcolumn">
     <div class="card">
-      <h2>Older Learners Click Here</h2>
-        <a href="1adult.html"><img  src="older.png" style="width: 100%:auto"></img> </a>
-      
-      
-      
+      <h2>Kids V's Life (Phonics) </h2>
+        <a href="https://www.youtube.com/playlist?list=PLNzmvHsa89l0nN-ucyNvnoPqcfeU3bys_"><img  src="kvl.png" style="width: 100%:auto"></img> </a>
     </div>
 </div>
  
