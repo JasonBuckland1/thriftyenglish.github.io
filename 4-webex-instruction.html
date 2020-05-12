@@ -1,16 +1,10 @@
 <!DOCTYPE html>
-
 <html>
-<head> 
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8" >
-    
-<link href="main.css" rel="stylesheet" type="text/css">
-    
-    <style> 
-          * {
+<style>
+* {
   box-sizing: border-box;
 }
 
@@ -57,23 +51,18 @@ body {
 /* Left column */
 .leftcolumn {   
   float: left;
-  width: 75%;
+  width: 50%;
+ 
 }
 
 /* Right column */
 .rightcolumn {
   float: left;
-  width: 25%;
+  width: 50%;
   background-color: #f1f1f1;
   padding-left: 20px;
 }
 
-/* Fake image */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
 
 /* Add a card effect for articles */
 .card {
@@ -104,14 +93,6 @@ body {
     padding: 0;
   }
 }
-
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-  .topnav a {
-    float: none;
-    width: 100%;
-  }
-}
     
 .change {
                 
@@ -119,33 +100,20 @@ body {
                 padding: 10px; 
                 resize: both;
                 overflow: auto;
-                max-height: 820px;
-                max-width: 100%;
-                margin-left: 0px;
-                margin-right: 00px;
+                max-height: inherit;
+                max-width: inherit;
+                margin-left: 10px;
+                margin-right: 10px;
+             
     }
-        
-        .change1 {
-                
-                border: 5px solid;
-                padding: 10px; 
-                resize: both;
-                overflow: auto;
-                height: 900px;
-                width: 100%;
-                margin-left: 0px;
-                margin-right: 00px;
-                padding-bottom: 5px;
-        }
-        
       * {
   box-sizing: border-box;
 }
 
 .column {
   float: left;
-  width: 23%;
-  padding: 5px;
+  width: 100%;
+  padding: 0px;
 }
 
         
@@ -158,20 +126,45 @@ body {
     }
     
     .extra1 {
-        padding-left: 190px;
+        padding-left: 0px;
     }
           
     .extra2 {
-        padding-left: 60px;
+        padding-left: 0px;
     }
-         .float {
+    
+    .float {
         float: left;
     }
     
     .floatright {
-        float: right;
+        float:right;
     }
-         .fa {
+    
+    .floatr {
+        display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 0%;
+            
+    }
+    
+    .card    img {
+        width: 100%;
+        height: 100%;
+        object-fit:contain;
+        max-height: 400px;
+      }
+    
+    .mid {
+        text-align: center;
+    }
+    
+    .paddingtop {
+        padding-top: 20px;
+    }
+     
+    .fa {
   padding: 20px;
   font-size: 30px;
   width: 50px;
@@ -193,66 +186,83 @@ body {
   background: #55ACEE;
   color: white;
     }
+     .op:hover {
+    opacity: 0.7;
 </style>
-    
-<head>
-    
-    
-    <div class="topnav">
-        
-         <div class="float">
-    <a href="index.html"> <img src="exit.png" 
-        style="height: 60px">  </a> 
-       </div> 
-        
-        <div class="floatright">
-    <a href="6teach.html"> <img src="refresh.png" 
-        style="height: 60px">  </a> 
-       </div> 
- 
- 
- 
-
-        
-        
-
-</div>
-    
-    
-    
-    
 </head>
+<body>
+
+<div class="header">
+     <div class="float">
+  
+       </div> 
+   <div class="float">
+       <div class="op">
+    <a href="3-joining-nearpod.html"> <img src="exit.png" 
+        style="height: 60px">  </a> 
+       </div> 
+       </div> 
     
- 
-    
-    
-    
-    
-    
- <div class="change">
+     <div class="floatright">
+         <div class="op">
+    <a href="1index.html"> <img src="arrowright.png" 
+        style="height: 60px">  </a> 
+         </div> 
+       </div> 
         
-     <iframe class="position3" src="https://player.twitch.tv/?channel=jasonbuckland1" frameborder="0" allowfullscreen="true" scrolling="no" height="800px" width="100%" top="10%"
-             
-            style="overflow: hidden" align="left" ></iframe>
+    <h1>Step: 4</h1>
+      
+      
     
+       
+           
+   </div>
+</div>
+  
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+        
+        <h3>Fourth Things Fourth.</h3>
+        
+        <p>Now you understand how to join a lesson using nearpod, follow the instructions do download Webex.
+        
+        <br><br>This is an online meeting like Zoom which lets me talk to people that join in. 
+            
+        <br><br>You can click this link below to see Webex now.
+               <div class="padding-top">
+                   <div class="op">
+             <a href="http://www.webex.com" target="_blank"><img src="webex.png"  style="height:60px"> </a>
+               </div>
+                   </div>
+         
+        
     </div>
     
+  </div>
     
-   <div class="change1">
-     <iframe  class="position4" src="https://nearpod.com/" frameborder="0" allowfullscreen="true" scrolling="no" height="870px" width="100%" 
-             
-            style="overflow: hidden" align="right: top" ></iframe>
+    
+  <div class="rightcolumn">
+    <div class="card">
+       
+        
+         <div class="change">
+      <iframe class="position3" src="webmeet.mp4" frameborder="0" allowfullscreen="true" scrolling="no" height="560px"
+    width=100% top="10%"></iframe>
+         </div>
+        
+    </div>
+</div>
+</div>
 
-        </div>
-        
-        
-        <video autoplay muted loop id="myVideo">
-  <source src="rain.mp4" type="video/mp4">
-</video>
-        
-        
-        
-        <div class="footer">
+
+
+
+    </body>
+    
+    
+  <div class="footer">
        
         <div class="float">
   
@@ -270,9 +280,9 @@ body {
   <h2>Supporting humans</h2>
        
 </div>
-        
-        
-    </body>
-    
-    
+       
+     
+
+
+
 </html>
