@@ -1,16 +1,10 @@
 <!DOCTYPE html>
-
 <html>
-<head> 
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8" >
-    
-<link href="main.css" rel="stylesheet" type="text/css">
-    
-    <style> 
-          * {
+<style>
+* {
   box-sizing: border-box;
 }
 
@@ -57,23 +51,18 @@ body {
 /* Left column */
 .leftcolumn {   
   float: left;
-  width: 75%;
+  width: 50%;
+ 
 }
 
 /* Right column */
 .rightcolumn {
   float: left;
-  width: 25%;
+  width: 50%;
   background-color: #f1f1f1;
   padding-left: 20px;
 }
 
-/* Fake image */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
 
 /* Add a card effect for articles */
 .card {
@@ -104,14 +93,6 @@ body {
     padding: 0;
   }
 }
-
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-  .topnav a {
-    float: none;
-    width: 100%;
-  }
-}
     
 .change {
                 
@@ -119,33 +100,20 @@ body {
                 padding: 10px; 
                 resize: both;
                 overflow: auto;
-                max-height: 250px;
-                max-width: 100%;
-                margin-left: 0px;
-                margin-right: 00px;
+                max-height: inherit;
+                max-width: inherit;
+                margin-left: 10px;
+                margin-right: 10px;
+             
     }
-        
-        .change1 {
-                
-                border: 5px solid;
-                padding: 10px; 
-                resize: both;
-                overflow: auto;
-                height: 410px;
-                width: 100%;
-                margin-left: 0px;
-                margin-right: 00px;
-                padding-bottom: 5px;
-            
-        }
       * {
   box-sizing: border-box;
 }
 
 .column {
   float: left;
-  width: 23%;
-  padding: 5px;
+  width: 100%;
+  padding: 0px;
 }
 
         
@@ -158,13 +126,41 @@ body {
     }
     
     .extra1 {
-        padding-left: 190px;
+        padding-left: 0px;
     }
           
     .extra2 {
-        padding-left: 60px;
+        padding-left: 0px;
     }
-        .fa {
+    
+    .float {
+        float: left;
+    }
+    
+    .floatright {
+        float:right;
+    }
+    
+    .floatr {
+        display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 0%;
+            
+    }
+    
+    .card    img {
+        width: 100%;
+        height: 100%;
+        object-fit:contain;
+        max-height: 400px;
+      }
+    
+    .mid {
+        text-align: center;
+    }
+    
+    .fa {
   padding: 20px;
   font-size: 30px;
   width: 50px;
@@ -186,60 +182,98 @@ body {
   background: #55ACEE;
   color: white;
     }
-         .op:hover {
+      .op:hover {
     opacity: 0.7;
-        }
-        
-        .fa-flickr {
+    }
+    
+ .fa-flickr {
   background: #430297;
   color: white;
 }
+    
 </style>
-    
-<head>
-    
-    
-    <div class="topnav">
-        <a href="index.html"><img src="exit.png" style="height: 60px"></a>
-  
- 
-</div>
-    
-    
-    
-    
 </head>
+<body>
+
+<div class="header">
+     <div class="float">
+  
+       </div> 
+   
+    <div class="float">
+        <div class="op">
+    <a href="3-joining-nearpod.html"> <img src="exit.png" 
+        style="height: 60px">  </a> 
+       </div> 
+        </div> 
     
- 
-    
-    
-    
-    
-    
- <div class="change">
+    <div class="floatright">
+         <div class="float">
+              <div class="op">
+    <a href="5-webex-instruction.html"> <img src="arrowright.png" 
+        style="height: 60px">  </a> 
+        </div>
+       </div> 
+    </div>
         
-     <iframe class="position3" src="https://player.twitch.tv/?channel=jasonbuckland1" frameborder="0" allowfullscreen="true" scrolling="no" height="200px" width="100%" top="10%"
-             
-            style="overflow: hidden" align="left" ></iframe>
+    <h1>Step: 4</h3>
     
+           
+   </div>
+</div>
+  
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+        
+        <h3>Fourth things Fourth.</h3>
+        
+        <p>Follow me on Twitch to get access to all videos and recordings if you miss a session. 
+        
+        <br><br>This is so you can practice and learn even when I am not teaching.
+            
+        <br><br>Videos are available on my profile.
+        
+        
+           <div class="op">
+        <a href="https://www.twitch.tv/jasonbuckland1" target="_blank"><img src="twitch.png" style="width: 100%:auto"></img></a>
+          </div>
     </div>
     
+  </div>
     
-   <div class="change1">
-     <iframe  class="position4" src="https://nearpod.com/student/" frameborder="0" allowfullscreen="true" scrolling="yes" height="380px" width="100%" 
+    
+  <div class="rightcolumn">
+    <div class="card">
+       
+         <div class="change">
              
-            style="overflow: hidden" align="right: top" ></iframe>
+         <h3>How to subscribe...</h3>
+             
+         <p>Click on the link to the left, and then press the 'FOLLOW' button.</p>
+             
+         <img src="love.png" style="height: 100px">
+             
+        <p>After, choose 'SIGN UP' and then type in your information to create your own profile.</p>
+             
+        <img src="twitchlog.png">
+             
+             <p>Watch my teaching videos whenever you want!</p>
+            
+         </div>
+        
+    </div>
+</div>
+</div>
 
-        </div>
-        
-        
-        <video autoplay muted loop id="myVideo">
-  <source src="rain.mp4" type="video/mp4">
-</video>
-        
-        
-        
-       <div class="footer">
+
+
+
+    </body>
+    
+    
+   <div class="footer">
        
         <div class="float">
   
@@ -255,9 +289,9 @@ body {
   <h2>Supporting humans</h2>
        
 </div>
-        
-        
-    </body>
-    
-    
+       
+     
+
+
+
 </html>
